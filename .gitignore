@@ -8,5 +8,5 @@ __pycache__/
 well-bot_venv/
 
 # Environment variables
-.env
-.env.*
+#.env
+#.env.*
