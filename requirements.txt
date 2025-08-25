@@ -1,0 +1,30 @@
+# Server (edge) core
+fastapi==0.111.0
+uvicorn[standard]==0.30.5
+pydantic==2.7.4
+python-dotenv==1.0.1
+websockets==12.0
+aiohttp==3.9.5
+loguru==0.7.2
+tenacity==8.5.0
+
+# Deepgram SDK (STT/TTS). If you prefer raw WS, you can remove this later.
+deepgram-sdk>=3.0.0,<4.0.0
+
+# Client audio + utils
+sounddevice==0.4.6
+numpy==1.26.4
+webrtcvad==2.0.10   # optional, for barge-in trigger
+soundfile==0.12.1   # fallback WAV I/O / debugging
+
+# (Optional) resampling if you need 16k/24k conversions
+librosa==0.10.2.post1
+numba==0.59.1
+
+
+
+# py -3.12 -m venv venv
+# .\venv\Scripts\Activate.ps1
+# python -m pip install --upgrade pip setuptools wheel
+# pip install -r requirements.txt
+# uvicorn edge_app.main:app --host 0.0.0.0 --port 8080 --reload

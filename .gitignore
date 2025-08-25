@@ -1,0 +1,12 @@
+venv/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+well-bot_venv/
+
+# Environment variables
+.env
+.env.*
